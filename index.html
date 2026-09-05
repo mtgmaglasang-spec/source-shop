@@ -12,71 +12,33 @@
         }
         body {
             background-color: #0b0713;
-            color: #ffffff;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-            padding: 20px;
-            overflow-x: hidden;
+            padding: 10px;
+            overflow: hidden;
         }
         .banner-container {
-            margin-bottom: 25px;
-            max-width: 100%;
-            border-radius: 15px;
+            width: 100%;
+            max-width: 600px;
+            border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 0 25px rgba(155, 77, 202, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .banner-container img {
             width: 100%;
-            max-width: 550px;
             height: auto;
             display: block;
-        }
-        .container {
-            text-align: center;
-        }
-        h1 {
-            font-size: 3.5rem;
-            letter-spacing: 4px;
-            color: #d1b3ff;
-            text-shadow: 0 0 10px #9b4dca, 0 0 20px #9b4dca, 0 0 40px #7b1fa2;
-            margin-bottom: 15px;
-        }
-        p {
-            font-size: 1.2rem;
-            color: #bfa8e6;
-            margin-bottom: 25px;
-        }
-        .btn {
-            display: inline-block;
-            padding: 12px 30px;
-            background: linear-gradient(135deg, #7b1fa2, #4a148c);
-            color: #fff;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            box-shadow: 0 0 15px rgba(155, 77, 202, 0.6);
-            transition: 0.3s ease;
-        }
-        .btn:hover {
-            background: linear-gradient(135deg, #9b4dca, #7b1fa2);
-            box-shadow: 0 0 25px rgba(155, 77, 202, 0.9);
-            transform: scale(1.05);
+            object-fit: contain;
         }
     </style>
 </head>
 <body>
     <div class="banner-container">
-        <!-- ILISI ang 'banner.gif' sa eksaktong pangalan sa GIF file nga imong gi-upload sa GitHub -->
-        <img src="banner.gif" alt="Source Shop Banner">
-    </div>
-    <div class="container">
-        <h1>SOURCE SHOP</h1>
-        <p>Welcome to the ultimate source for your digital needs.</p>
-        <a href="#contact" class="btn">Explore Now</a>
+        <img src="banners/banner.png" alt="Source Shop Banner">
     </div>
 </body>
 </html>
