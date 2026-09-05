@@ -28,6 +28,11 @@
             border-radius: 15px;
             overflow: hidden;
             box-shadow: 0 0 25px rgba(155, 77, 202, 0.7);
+            background: rgba(25, 15, 40, 0.5);
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .banner-container img {
             width: 100%;
@@ -52,7 +57,7 @@
         }
         .btn {
             display: inline-block;
-            padding: 12px 30px;
+            padding: 12px30px;
             background: linear-gradient(135deg, #7b1fa2, #4a148c);
             color: #fff;
             text-decoration: none;
@@ -70,7 +75,8 @@
 </head>
 <body>
     <div class="banner-container">
-        <img src="banners/banner.png" alt="Source Shop Banner">
+        <!-- Kung naa na sa saktong folder, mo-load na kini direkta -->
+        <img src="banners/banner.png" alt="Source Shop Banner" onerror="this.onerror=null; this.src='banner.png';">
     </div>
     <div class="container">
         <h1>SOURCE SHOP</h1>
