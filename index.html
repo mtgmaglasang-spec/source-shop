@@ -5,41 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Source Shop</title>
     <style>
-        * {
+        body {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-        html, body {
-            width: 100%;
-            height: 100%;
             background-color: #0b0713;
+            width: 100vw;
+            height: 100vh;
             display: flex;
-            align-items: center;
             justify-content: center;
-            overflow: hidden;
-        }
-        .banner-container {
-            width: 100%;
-            max-width: 550px;
-            padding: 20px;
-            display: flex;
             align-items: center;
-            justify-content: center;
         }
-        .banner-container img {
-            width: 100%;
+        .center-box {
+            text-align: center;
+        }
+        img {
+            max-width: 500px;
+            width: 90%;
             height: auto;
             display: block;
-            object-fit: contain;
-            border-radius: 12px;
+            margin: 0 auto;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="banner-container">
-        <!-- Direkta nga gipasukad sa banner.png -->
-        <img src="banner.png" alt="Source Shop Banner">
+    <div class="center-box">
+        <!-- Sulayi ang banner.png, kung wala mo-load, usba ang file name sa GitHub -->
+        <img src="banner.png" alt="Source Shop Banner" onerror="this.src='https://raw.githubusercontent.com/MarcuForce/source-shop/main/banner.png';">
     </div>
 </body>
 </html>
