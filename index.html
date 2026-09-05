@@ -19,23 +19,36 @@
             align-items: center;
             justify-content: center;
             min-height: 100vh;
+            padding: 20px;
             overflow-x: hidden;
+        }
+        .banner-container {
+            margin-bottom: 25px;
+            max-width: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 0 25px rgba(155, 77, 202, 0.7);
+        }
+        .banner-container img {
+            width: 100%;
+            max-width: 550px;
+            height: auto;
+            display: block;
         }
         .container {
             text-align: center;
-            padding: 20px;
         }
         h1 {
-            font-size: 4rem;
+            font-size: 3.5rem;
             letter-spacing: 4px;
             color: #d1b3ff;
             text-shadow: 0 0 10px #9b4dca, 0 0 20px #9b4dca, 0 0 40px #7b1fa2;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
         p {
             font-size: 1.2rem;
             color: #bfa8e6;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
         .btn {
             display: inline-block;
@@ -45,7 +58,7 @@
             text-decoration: none;
             border-radius: 25px;
             font-weight: bold;
-            box-ask: 0 0 15px rgba(155, 77, 202, 0.6);
+            box-shadow: 0 0 15px rgba(155, 77, 202, 0.6);
             transition: 0.3s ease;
         }
         .btn:hover {
@@ -56,6 +69,10 @@
     </style>
 </head>
 <body>
+    <div class="banner-container">
+        <!-- ILISI ang 'banner.gif' sa eksaktong pangalan sa GIF file nga imong gi-upload sa GitHub -->
+        <img src="banner.gif" alt="Source Shop Banner">
+    </div>
     <div class="container">
         <h1>SOURCE SHOP</h1>
         <p>Welcome to the ultimate source for your digital needs.</p>
